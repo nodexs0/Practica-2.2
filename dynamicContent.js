@@ -28,17 +28,5 @@ export const dynamicContent = {
         path: '/images/oaxaqueños.jpg',
         url: 'https://www.recetasgratis.net/receta-de-tamales-oaxaquenos-receta-original-76245.html',
         message: 'Son eclécticos y llenos de sorpresas, como un espíritu libre que no se adhiere a las reglas y disfruta explorando nuevas experiencias culinarias.'
-    },
-    'cheetos.jpg': {
-        name: 'Tamales de cheetos',
-        path: '/images/cheetos.jpg',
-        url: 'https://i.pinimg.com/736x/85/07/ec/8507ec7f0bb8cb4a6d686b5372401703.jpg',
-        mesage: 'Se ven que saben a basura pero te sorprenden de verdad'
-    },
-    'napolitano.webp': {
-        name: 'Tamal Napolitano',
-        path: '/images/napolitano.jpg',
-        url: 'https://cdn2.cocinadelirante.com/filters:format(webp):quality(75)/sites/default/files/styles/gallerie/public/tamalemio3.jpg',
-        mesage: 'Ya se puede hacer tamales de diferentes sabores, algunos muy raros pero todos deliciosos; eso seguro'
-    },
+    }
 };

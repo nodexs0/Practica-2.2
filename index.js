@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import path from 'path';
 import { dynamicContent } from './dynamicContent.js';
+import { dynamicContentChetos } from './dynamicContentChetos.js';
 
 dotenv.config();
 
@@ -39,9 +40,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/perfil', (req, res) => {
-    const images = Object.keys(dynamicContent);
+    const images = Object.keys(dynamicContentChetos);
     const randomImage = images[Math.floor(Math.random() * images.length)];
-    const imageData = dynamicContent[randomImage];
+    const imageData = dynamicContentChetos[randomImage];
 
     res.status(200);
     res.render('perfil', {
@@ -53,9 +54,9 @@ app.get('/perfil', (req, res) => {
 });
 
 app.put('/perfil', (req, res) => {
-    const images = Object.keys(dynamicContent);
+    const images = Object.keys(dynamicContentChetos);
     const randomImage = images[Math.floor(Math.random() * images.length)];
-    const imageData = dynamicContent[randomImage];
+    const imageData = dynamicContentChetos[randomImage];
 
     res.status(200);
     res.render('perfil', {
@@ -66,11 +67,6 @@ app.put('/perfil', (req, res) => {
     });
 });
 
-app.put('/perfil', (req, res, next) => {
-    const err = new Error('Fallo muestra de perfil');
-    err.status = 500;
-    next(err);
-});
 
 app.get('/generar-error', (req, res, next) => {
     const err = new Error('El servidor no soporto :(');
