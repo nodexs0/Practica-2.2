@@ -35,7 +35,7 @@ export const dynamicContent = {
         url: 'https://i.pinimg.com/736x/85/07/ec/8507ec7f0bb8cb4a6d686b5372401703.jpg',
         mesage: 'Se ven que saben a basura pero te sorprenden de verdad'
     },
-    'napolitano.jpg': {
+    'napolitano.webp': {
         name: 'Tamal Napolitano',
         path: '/images/napolitano.jpg',
         url: 'https://cdn2.cocinadelirante.com/filters:format(webp):quality(75)/sites/default/files/styles/gallerie/public/tamalemio3.jpg',
