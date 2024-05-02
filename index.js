@@ -38,6 +38,40 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/perfil', (req, res) => {
+    const images = Object.keys(dynamicContent);
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    const imageData = dynamicContent[randomImage];
+
+    res.status(200);
+    res.render('perfil', {
+        name: imageData.name,
+        message: imageData.message,
+        imageUrl: imageData.path,
+        pageUrl: imageData.url
+    });
+});
+
+app.put('/perfil', (req, res) => {
+    const images = Object.keys(dynamicContent);
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    const imageData = dynamicContent[randomImage];
+
+    res.status(200);
+    res.render('perfil', {
+        name: imageData.name,
+        message: imageData.message,
+        imageUrl: imageData.path,
+        pageUrl: imageData.url
+    });
+});
+
+app.put('/perfil', (req, res, next) => {
+    const err = new Error('Fallo muestra de perfil');
+    err.status = 500;
+    next(err);
+});
+
 app.get('/generar-error', (req, res, next) => {
     const err = new Error('El servidor no soporto :(');
     err.status = 500;
@@ -54,6 +88,6 @@ app.use((err, req, res, next) => {
     res.render('500', { error: err });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, () => { 
     console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
