@@ -1,14 +1,20 @@
 export const dynamicContentChetos = {
-    'cheetos.jpg': {
-        name: 'Tamales de cheetos',
-        path: '/images/cheetos.jpg',
-        url: 'https://i.pinimg.com/736x/85/07/ec/8507ec7f0bb8cb4a6d686b5372401703.jpg',
-        message: 'Se ven que saben a basura pero te sorprenden de verdad'
+    'crunchy.jpg': {
+        name: 'Cheetos Crunchy',
+        path: '/images/crunchy.jpg',
+        url: 'URL de Cheetos Crunchy',
+        message: 'Son los clásicos, crujientes y llenos de sabor a queso naranja, como un viejo amigo que siempre está ahí para satisfacer tus antojos de bocadillos.'
     },
-    'napolitano.webp': {
-        name: 'Tamal Napolitano',
-        path: '/images/napolitano.webp',
-        url: 'https://cdn2.cocinadelirante.com/filters:format(webp):quality(75)/sites/default/files/styles/gallerie/public/tamalemio3.jpg',
-        message: 'Ya se puede hacer tamales de diferentes sabores, algunos muy raros pero todos deliciosos; eso seguro'
+    'flaminhot.jpg': {
+        name: 'Cheetos Flamin\' Hot',
+        path: '/images/flaminhot.webp',
+        url: 'URL de Cheetos Flamin\' Hot',
+        message: 'Tienen un toque picante que despierta tus papilas gustativas, como alguien que añade emoción y calor a cualquier situación.'
+    },
+    'puffs.jpg': {
+        name: 'Cheetos Puffs',
+        path: '/images/puffs.webp',
+        url: 'URL de Cheetos Puffs',
+        message: 'Son suaves y ligeros, como una nube de queso que se derrite en tu boca, perfectos para aquellos que prefieren una textura más suave en sus bocadillos.'
     }
 };
